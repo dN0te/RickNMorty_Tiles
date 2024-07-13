@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YuvalArbek</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="restart">Restart</string>
+    <string name="exit">Exit</string>
+    <string name="game_over">Game Over</string>
+    <string name="leaderboard">Leaderboard</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/Main_IMG_Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rickandmortymain" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over!"
+        android:fontFamily="@font/brownist"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="100sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gameOver_BTN_main_menu"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/startTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Main Menu"
+        android:fontFamily="@font/brownist"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gameOver_BTN_restart"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/gameOver_BTN_main_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Restart"
+        android:fontFamily="@font/brownist"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gameOver_BTN_exit"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/gameOver_BTN_restart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Exit"
+        android:fontFamily="@font/brownist"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        android:padding="16dp" />
+
+</RelativeLayout>

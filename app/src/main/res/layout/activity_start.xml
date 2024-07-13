@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/Main_IMG_Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rickandmortymain" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rick And Morty!"
+        android:fontFamily="@font/brownist"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startButton"
+        android:layout_width="@dimen/buttons_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/title_height"
+        android:text="Normal Mode"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/buttons_margin"
+        android:fontFamily="@font/brownist"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/x2SpeedButton"
+        android:layout_width="@dimen/buttons_width"
+        android:layout_height="@dimen/button_height"
+        android:text="x2 Speed"
+        android:layout_below="@id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/buttons_margin"
+        android:fontFamily="@font/brownist"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tiltControlButton"
+        android:layout_width="@dimen/buttons_width"
+        android:layout_height="@dimen/button_height"
+        android:text="Tilt Control"
+        android:layout_below="@id/x2SpeedButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/buttons_margin"
+        android:fontFamily="@font/brownist"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scoreboardButton"
+        android:layout_width="@dimen/buttons_width"
+        android:layout_height="wrap_content"
+        android:text="Scoreboard"
+        android:layout_below="@id/tiltControlButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/buttons_margin"
+        android:fontFamily="@font/brownist"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        />
+</RelativeLayout>
